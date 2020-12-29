@@ -1,0 +1,33 @@
+/*Let's make sure that the dimensions of any box includes its border and padding, this gives us an easy way of sizing our elements*/
+* {
+  box-sizing: border-box;
+}
+
+/* Convert the container to flex box */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column:nth-child(1) {
+  background: sienna;
+}
+.column:nth-child(2) {
+  background: purple;
+}
+.column:nth-child(3) {
+  background: teal;
+}
+.column:nth-child(4) {
+  background: brown;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+img {
+  width: 100%;
+}
